@@ -1,4 +1,4 @@
-deppBoF
+deepBoF
 
 Experiment code used in the paper, “A deep bag-of-features model for music auto-tagging” by Juhan Nam, Jorge Herrera and Kyogu Lee (http://arxiv.org/abs/1508.04999)
 
