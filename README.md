@@ -8,7 +8,7 @@ step1) process_tagatune_audio.m: preprocessing mp3 data
 
 step2) run_tagatune_unsup.m: unsupervised learning from local feature learning to song-level pretraining for DNN  
 
-step3) run_tagatine_dnn.m: supervised learning using DNN
+step3) run_tagatune_dnn.m: supervised learning using DNN
 
 
 
