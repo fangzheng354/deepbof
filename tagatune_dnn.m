@@ -68,19 +68,8 @@ if options.deep_networks.input_normalization
     test_data = bsxfun(@rdivide, test_data, max_value);
 end
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% now ready to do dnn
-
-% X = train_data';
-% X_labels = train_label;
-% X_valid = valid_data';
-% X_valid_labels= valid_label;
-% X_test = test_data';
-% X_test_labels = test_label;
-
-%layers = [size(X,2)];
+% setup DNN
 layers = [size(train_data,1)];
-
-
 for i=1:options.deep_networks.num_hidden_layers
     layers = [layers, options.deep_networks.rbm_params{i}.hidden_layer ];
 end
@@ -127,7 +116,6 @@ end
 % training 
 fprintf(1, 'Training MLP\n');
 tic;
-%M = tagatune_mlp (M, X, X_labels, X_valid, X_valid_labels, 0.1, 0);
 M = tagatune_mlp (M, train_data', train_label, valid_data', valid_label, 0.1, 0);
 fprintf(1, 'Training is done after %f seconds\n', toc);
 
