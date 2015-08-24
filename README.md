@@ -2,7 +2,7 @@ deepBoF
 
 Experiment code used in the paper, “A deep bag-of-features model for music auto-tagging” by Juhan Nam, Jorge Herrera and Kyogu Lee (http://arxiv.org/abs/1508.04999)
 
-Run the following scripts to run the whole pipeline:
+Refer to the following scripts to run the whole pipeline:
 
 step1) process_tagatune_audio.m: preprocessing mp3 data
 
